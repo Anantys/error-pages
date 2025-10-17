@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0"/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Anantys — Incident temporaire</title>
+<style>
+:root{
+  --bg:#0b0f17;
+  --surface:#151b28;
+  --muted:#aab3c5;
+  --primary:#38d6a2;
+  --border:rgba(255,255,255,.08);
+  --heading:#e7ecf4;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:radial-gradient(1200px 600px at 70% -20%, #0f1530 0%, transparent 60%), var(--bg);color:#fff;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Inter,Arial,sans-serif;}
+header{display:flex;align-items:center;justify-content:center;padding:32px 0}
+header img{height:56px;width:auto;filter:drop-shadow(0 0 6px rgba(0,0,0,0.4));}
+main{display:flex;align-items:center;justify-content:center;flex-direction:column;min-height:60vh;text-align:center;padding:0 1rem;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:2rem;max-width:700px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+h1{font-size:2rem;margin:.5rem 0 1rem;color:var(--heading)}
+h1 strong{color:var(--primary)}
+p{color:var(--muted);margin:.5rem 0;font-size:1.05rem}
+.code{font-weight:600;color:var(--primary);margin-bottom:.5rem;font-size:1.1rem;letter-spacing:.02em;}
+.actions{margin-top:1.2rem;display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;}
+a.btn{padding:.7rem 1.2rem;border-radius:12px;text-decoration:none;font-weight:600;font-size:1rem;transition:all .15s ease}
+.btn.primary{background:var(--primary);color:#0b0f17;}
+.btn.primary:hover{filter:brightness(1.05)}
+.btn.secondary{border:1px solid var(--border);color:#fff;background:transparent;}
+footer{margin-top:2rem;color:var(--muted);font-size:.9rem;}
+</style>
+</head>
+<body>
+<header>
+  <img src="anantys-logo-transp.webp" alt="Anantys logo" loading="lazy"/>
+</header>
+<main>
+  <div class="card">
+    <div class="code">Incident temporaire</div>
+    <h1>Nous sommes <strong>dessus</strong></h1>
+    <p>Un problème empêche l'affichage de cette page pour le moment.</p>
+    <div class="actions">
+      <a class="btn primary" href="/">Accueil</a>
+      <a class="btn secondary" href="https://status.anantys.com">Statut</a>
+    </div>
+    <footer>© Anantys</footer>
+  </div>
+</main>
+</body>
+</html>
