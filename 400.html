@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0"/>
 <meta name="robots" content="noindex, nofollow"/>
-<title>Anantys — Incident temporaire (Erreur 503)</title>
+<title>Anantys — Incident temporaire (Erreur 400)</title>
 <style>
 :root{
   --bg:#0b0f17;
@@ -61,7 +61,7 @@ footer{margin-top:2rem;color:var(--muted);font-size:.9rem;}
   <script>
     // Parse ?status=XYZ from the URL
     const params = new URLSearchParams(window.location.search);
-    const status = params.get("status") || "503";
+    const status = params.get("status") || "400";
 
     const messages = {
       "404": "Page not found.",
