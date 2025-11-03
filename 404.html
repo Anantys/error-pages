@@ -60,7 +60,7 @@
         z-index: 0;
       }
 
-      .container {
+      .error-page-container {
         position: relative;
         z-index: 1;
         display: flex;
@@ -82,7 +82,7 @@
         width: 100%;
       }
 
-      .content {
+      .error-page-content {
         max-width: 550px;
         text-align: left;
         padding: 2.5rem;
@@ -117,7 +117,7 @@
         color: var(--text-color) !important;
       }
 
-      .btn {
+      .error-page-btn {
         display: inline-block;
         font-family: "Inter", sans-serif;
         font-weight: 600;
@@ -131,7 +131,7 @@
         transition: background-color 0.3s ease, color 0.3s ease;
       }
 
-      .btn:hover {
+      .error-page-btn:hover {
         background-color: var(--highlight-color);
         color: var(--background-color);
       }
@@ -187,14 +187,14 @@
         main {
           justify-content: center;
         }
-        .content {
+        .error-page-content {
           text-align: center;
           max-width: 90%;
         }
       }
 
       @media (max-width: 600px) {
-        .container {
+        .error-page-container {
           padding-top: 2rem;
         }
         h1 {
@@ -215,16 +215,16 @@
       global-css-url="https://anantys.com/corp-ssapi/wc/navbar/anantys-navbar.css?r=20251027.1"
     ></anantys-navbar>
 
-    <div class="container">
+    <div class="error-page-container">
       <main>
-        <div class="content">
+        <div class="error-page-content">
           <h1>404</h1>
           <h2>Hmm, this asset could not be found.</h2>
           <p>
             The market is volatile. The page you're looking for may have been
             delisted, its symbol changed, or it may have never existed.
           </p>
-          <a href="/" class="btn">Return to Homepage</a>
+          <a href="/" class="error-page-btn">Return to Homepage</a>
         </div>
       </main>
     </div>
