@@ -1,7 +1,7 @@
 # ---- config ----
 TEMPLATE := default.html
 OUTDIR   := .
-STATUSES ?= 400 401 403 503 504
+STATUSES ?= 400 401 403 504
 
 # Derived targets (no leading ./ in names)
 PAGES := $(addsuffix .html,$(STATUSES))
