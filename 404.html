@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>404 Page Introuvable - Anantys</title>
+    <title>404 Not Found - Anantys</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -54,9 +54,9 @@
         height: 100%;
         background-image: url("https://anantys.com/static/images/snake.webp");
         background-repeat: no-repeat;
-        background-position: right -15% center;
+        background-position: right center;
         background-size: contain;
-        opacity: 0.3;
+        opacity: 0.2;
         z-index: 0;
       }
 
@@ -78,44 +78,43 @@
       main {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         width: 100%;
       }
 
       .content {
-        max-width: 500px;
+        max-width: 550px;
         text-align: left;
         padding: 2.5rem;
         background: var(--card-background);
         border: 1px solid var(--border-color);
-        border-radius: 1rem;
+        border-radius: 1.5rem;
         backdrop-filter: blur(10px);
         box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
       }
 
       h1 {
         font-family: "Space Grotesk", sans-serif;
-        font-size: 6rem;
-        color: white;
-        line-height: 1;
-        margin-bottom: 1rem;
-      }
-
-      h1 span {
+        font-size: 12rem;
+        font-weight: 700;
         color: var(--highlight-color);
+        line-height: 1;
+        margin-bottom: 2rem;
+        text-align: center;
       }
 
       h2 {
         font-family: "Space Grotesk", sans-serif;
-        font-size: 1.75rem;
+        font-size: 2rem;
         color: white;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
       }
 
       p {
-        font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin-bottom: 2.5rem;
+        color: var(--text-color) !important;
       }
 
       .btn {
@@ -127,7 +126,7 @@
         background-color: transparent;
         border: 2px solid var(--highlight-color);
         padding: 0.75rem 1.5rem;
-        border-radius: 0.5rem;
+        border-radius: 0.8rem;
         text-decoration: none;
         transition: background-color 0.3s ease, color 0.3s ease;
       }
@@ -135,6 +134,25 @@
       .btn:hover {
         background-color: var(--highlight-color);
         color: var(--background-color);
+      }
+
+      footer {
+        padding: 2rem;
+        text-align: center;
+        width: 100%;
+        color: var(--text-color);
+        opacity: 0.8;
+        font-size: 0.9rem;
+      }
+
+      footer a {
+        color: var(--highlight-color);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
       }
 
       anantys-navbar.sticky {
@@ -200,15 +218,19 @@
     <div class="container">
       <main>
         <div class="content">
-          <h1>4<span>0</span>4</h1>
-          <h2>Page Introuvable</h2>
+          <h1>404</h1>
+          <h2>Hmm, this asset could not be found.</h2>
           <p>
-            La page que vous recherchez a peut-être été supprimée, a changé de
-            nom ou est temporairement indisponible.
+            The market is volatile. The page you're looking for may have been
+            delisted, its symbol changed, or it may have never existed.
           </p>
-          <a href="/" class="btn">Retour à l'accueil</a>
+          <a href="/" class="btn">Return to Homepage</a>
         </div>
       </main>
     </div>
+    <footer>
+      Anantys - Take back control of your investments |
+      <a href="https://anantys.com">anantys.com</a>
+    </footer>
   </body>
 </html>
