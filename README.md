@@ -1,16 +1,12 @@
-# Build the defaults
+# Anantys error pages
+
+Served by Traefik from GitHub Pages (`https://anantys.github.io/error-pages/`).
+Every page is generated from `template.html`; the copy lives in `build.py`.
+Never edit a generated `.html` page by hand.
+
+# Rebuild every page
 ```
 make
-```
-
-# Build just 502.html
-```
-make 502
-```
-
-# Build a custom set
-```
-make STATUSES="401 418 451"
 ```
 
 # Serve locally on http://localhost:8080
